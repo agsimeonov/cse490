@@ -1,0 +1,13 @@
+CSE490 - Electornic Lock
+The Design of this project is rather simple and closely related to the description found within the design project pdf.
+The Lock has 3 states on power on Switch 0 should be lowered so that we can be in the unlocked stated UnLC.  
+When lowered this switch indicates that the device is unlocked or that someone is attempting to unlock it.  
+When raised the device will lock.  The default combination is 0000.  This combination can be changed when the device is in UnLC.
+To change a combination simply hold each pushbutton until you arrive at the desired number combination.  When you raise switch 0
+the device will then lock and proceed to stage LOC.  In this stage you can press each push button up to 25 times.  The combination
+is still entered by holding down a push button.  each push counts as one press out of said 25 so try to hold until arriving at
+desired combination rather then pressing continuously.  You will have 15 seconds to enter a combination after which you will have
+to start entering the combination over again.  To attempt to use a combination to unlock move switch 0 downwards.  If correct the
+device will unlock, if wrong the device will remain locked and you won't be able to enter a new combination until you  move switch 0
+upwards again.  If you press the buttons 25 times the device will deactivate for 10 seconds and display PAUS.  After this the device
+will go back to the locked state LOC again.
